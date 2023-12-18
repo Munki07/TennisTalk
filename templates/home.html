@@ -17,13 +17,12 @@
 
 <body>
     <div class="container text-center">
-        <h1>Ok roadtrip addict</h1>
         <h1 class="mt-2">{{website_name}}</h1>
         <img src="http://127.0.0.1:5000/static/tennis.jpg" width="500" height="300" class="center mt-2 mb-2">
         <h2 style="margin-bottom:10px">Tennis is a great sport to play</h2>
     </div>
     <div class="text-center">
-        <button class="btn btn-primary btn-lrg" style="margin-bottom:10px;">Chat</button>
+        <button id="Enter" type="button" onclick="window.location.href = '{{ url_for('talk_screen') }}' ; " class="button btn btn-primary btn-lrg">Chat</button>
     </div>
     <div style="margin-left:10px">
         {% for player in players %}

@@ -30,9 +30,10 @@ players = [
 def home_screen():
     return render_template("home.html", players=players, website_name='Tennis Talk')
 
-@app.route("/chatroom")
+
+@app.route("/chatroom", methods= ['GET', 'POST'])
 def talk_screen():
-    return("Hello")
+    return render_template("chatroom.html")
 
 if __name__ == "__main__":
     app.run()
