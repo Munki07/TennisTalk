@@ -31,7 +31,7 @@ def home_screen():
     return render_template("home.html", players=players, website_name='Tennis Talk')
 
 
-@app.route("/chatroom", methods= ['GET', 'POST'])
+@app.route("/chatroom")
 def talk_screen():
     return render_template("chatroom.html")
 
