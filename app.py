@@ -18,6 +18,11 @@ players = [
         'hand': 'Right-handed',
         'titles': '103'
     },
+    {
+        'name': 'Andy Murray',
+        'hand': 'Right-handed',
+        'titles': '25'
+    }
 ]
 
 
